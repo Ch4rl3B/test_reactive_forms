@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:reactive_forms/reactive_forms.dart';
 import 'package:test_reactive_forms/example_one.dart';
 import 'package:test_reactive_forms/example_three.dart';
@@ -28,6 +29,10 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate
+      ],
       home: MyHomePage(title: 'Reactive Forms Rocks!!'),
     );
   }
